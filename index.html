@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div>
+                <h1>My Tasks</h1>
+                <p>A little progress every day.</p>
+            </div>
+            <span id="taskCount">0 tasks</span>
+        </header>
+
+        <section class="add-section">
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What needs to be done?"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Add task</button>
+            </form>
+        </section>
+
+        <section class="progress-section">
+            <div class="progress-heading">
+                <span>Your progress</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <div id="taskList"></div>
+            <p id="emptyMessage">Nothing here yet. Add your first task.</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
